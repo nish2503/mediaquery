@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Survey Form </title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"></head>
+<body>
+    <center>
+    <form id="survey-form" onsubmit="return submitForm()" method="post" action="https://enw7u145b8im9.x.pipedream.net/">
+        <center><h2> SURVEY FORM </h2></center>
+    <div class="background-box">
+     <p>
+        <div class="heading.c">
+            <label><h4><i class="fa fa-user"></i>&nbsp; NAME </h4></label>
+        </div>
+    </p>
+    <p>
+        <div>
+            <label class="align1" for="first_name"> First Name<span style="color:rgb(245, 48, 48)">*</span> : </label><br>
+            <input class="details" id="first_name" name="first_name" type="text" placeholder= "Enter first name"  required>
+        </div>
+     </p>  
+     <p>
+        <div>
+            <label class="align2" for="last_name"> Last Name<span style="color:rgb(245, 48, 48)">*</span> : </label><br>
+            <input class="details" id="last_name" name="last_name" type="text" placeholder= "Enter last name"  required>
+        </div>
+     </p> 
+     <p>
+        <div class="heading.c">
+            <label for="address"><h4><i class="fa fa-home"></i> ADDRESS </h4></label>
+        </div>
+    </p>
+     <p>
+        <div>
+            <label class="align3" for="street_address"> Street<span style="color:rgb(245, 48, 48)">*</span> : </label><br>
+            <input class="details" id="street_name" type="text" placeholder= "Enter street name" name="street_address" required>
+        </div>
+     </p> 
+     <p>
+        <div>
+            <label class="align4" for="city"> City<span style="color:rgb(245, 48, 48)">*</span> : </label><br>
+            <input class="details" id="city_name" type="text" placeholder= "Enter city name" name="city" required>
+        </div>
+     </p>
+     <p>
+        <div>
+            <label class="align5" for="state"> State<span style="color:rgb(245, 48, 48)">*</span> : </label><br>
+            <input class="details" id="state_name" type="text" placeholder= "Enter state name" name="state" required>
+        </div>
+     </p>
+     <p>
+        <div>
+            <label class="align6" for="pincode"> Pin-code<span style="color:rgb(245, 48, 48)">*</span> : </label><br>
+            <input class="details" id="pin_code" type="number" placeholder= "Enter pin-code" name="pincode" required>
+        </div>
+     </p>
+     <p>
+        <div class="heading.c">
+            <label><h4><i class="fa fa-phone"></i>&nbsp;CONTACT DETAILS</h4></label>
+        </div>
+    </p>
+     <p>
+        <div>
+            <label class="align7" for="contact_number"> Contact Number<span style="color:rgb(245, 48, 48)">*</span> : </label><br>
+            <input class="details" id="contact_number" type="number" maxlength="10" placeholder= "Enter phone number" name="contact_number" required>
+        </div>
+     </p> 
+     <p>
+        <div class="heading.c">
+            <label><h4><i class="fa fa-star-o"></i> RATING SECTION </h4></label>
+        </div>
+    </p>
+    <p>
+        <div>
+            <label class="m_rate" for="quality_of_products_received_rating"> 1. Quality of products<span style="color:rgb(245,48,48)">*</span> : </label><br><pre></pre>
+                <input class="m_rating" id="m_excellent" type="radio" name="quality_of_products_received_rating" required>&nbsp;<i class="fa fa-star" style="color:rgb(255,230,0)" value="excellent"></i>
+                <label for="m_excellent">&nbsp;Excellent &nbsp;</label>
+                <input class="m_rating" id="m_good" type="radio" name="quality_of_products_received_rating" required>&nbsp;<i class="fa fa-star-half-o" style="color:rgb(255,230,0)" value="good"></i>
+                <label for="m_excellent">&nbsp;Good &nbsp;</label>
+                <input class="m_rating" id="m_bad" type="radio" name="quality_of_products_received_rating" required>&nbsp;<i class="fa fa-star-o" style="color:rgb(255,230,0)" value="bad"></i>
+                <label for="m_excellent">&nbsp;Bad &nbsp;</label>
+            
+        </div>
+     </p>
+     <p>
+        <div>
+            <label class="m_rate" for="value_for_money_rating"> 2. Value for money<span style="color:rgb(245,48,48)">*</span> : </label><br><pre></pre>
+            <input class="m_rating" id="m_excellent2" type="radio" name="value_for_money_rating" required>
+                <label for="m_excellent"><i class="fa fa-star" style="color:rgb(255,230,0)" value="excellent"></i>&nbsp; Excellent &nbsp;</label>
+                <input class="m_rating" id="m_good2" type="radio" name="value_for_money_rating" required> 
+                <label for="m_excellent"><i class="fa fa-star-half-o" style="color:rgb(255,230,0)" value="good"></i>&nbsp; Good &nbsp;</label>
+                <input class="m_rating" id="m_bad2" type="radio" name="value_for_money_rating" required> 
+                <label for="m_excellent"><i class="fa fa-star-o" style="color:rgb(255,230,0)" value="bad" ></i>&nbsp; Bad &nbsp;</label>
+        </div>
+     </p>
+     <p>
+        <div>
+            <label class="m_rate" for="delivery_rating"> 3. Delivery<span style="color:rgb(245,48,48)">*</span> : </label><br><pre></pre>
+            <input class="m_rating" id="m_excellent3" type="radio" name="delivery_rating" required>&nbsp;<i class="fa fa-star" style="color:rgb(255,230,0)" value="excellent"></i>
+                <label for="m_excellent">&nbsp;Excellent &nbsp;</label>
+                <input class="m_rating" id="m_good3" type="radio" name="delivery_rating" required>&nbsp;<i class="fa fa-star-half-o" style="color:rgb(255,230,0)" value="good"></i>
+                <label for="m_excellent">&nbsp;Good &nbsp;</label>
+                <input class="m_rating" id="m_bad3" type="radio" name="delivery_rating" required>&nbsp;<i class="fa fa-star-o" style="color:rgb(255,230,0)" value="bad"></i>
+                <label for="m_excellent">&nbsp;Bad &nbsp;</label>
+        </div>
+     </p>
+     <p>
+        <button>Submit</button>
+    </p>
+    </div>
+    </form>
+    </center>
+</body>
+</html>
